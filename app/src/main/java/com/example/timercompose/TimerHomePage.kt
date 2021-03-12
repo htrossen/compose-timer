@@ -61,10 +61,10 @@ fun SetTime(startTimer: (Triple<Int, Int, Int>) -> Unit) {
                 text = " : "
             )
             TimeSelector(minutes, 59, "Minutes")
-//            Text(
-//                text = " : "
-//            )
-//            TimeSelector(seconds, 59, "Seconds")
+            Text(
+                text = " : "
+            )
+            TimeSelector(seconds, 59, "Seconds")
         }
 
         FloatingActionButton(
@@ -89,7 +89,7 @@ fun TimeSelector(currentVal: MutableState<Int>, maxValue: Int, type: String) {
         val canIncrease = currentVal.value < maxValue
         val canDecrease = currentVal.value > 0
 
-        Text(text = type)
+//        Text(text = type)
 
         Icon(
             imageVector = Icons.Filled.ArrowDropDown,
